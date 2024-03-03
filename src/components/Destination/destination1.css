@@ -1,0 +1,15 @@
+/* destination1.css */
+
+.map-container {
+    position: relative;
+    width: 50%; /* Adjust the width as needed */
+    height: 60vh; /* Adjust the height as needed */
+    float: right; /* Position the map container on the left side */
+  }
+  
+  .map {
+    width: 100%;
+    height: 100%;
+  }
+
+  

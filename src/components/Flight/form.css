@@ -1,0 +1,63 @@
+/* form.css */
+
+.container {
+  display: flex;
+}
+
+.booking-form {
+  flex: 1; /* Take remaining space */
+  max-width: 600px;
+  margin: 2rem;
+  padding: 20px;
+  background-color: #eee8e8;
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="date"],
+select {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button.search-btn {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button.search-btn:hover {
+  background-color: #0056b3;
+}
+
+/* Styles for the slider card */
+.card {
+  width: 500px;
+  height: 300px;
+  overflow: hidden;
+  border-radius: 8px;
+  margin: 2rem;
+  margin-left: 9rem; /* Adjust as needed */
+}
+
+.card img {
+  background: green;
+  width: 500px;
+  height: 300px;
+  transition: transform 0.5s ease;
+}

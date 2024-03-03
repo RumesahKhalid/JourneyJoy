@@ -1,0 +1,61 @@
+#sidebar{
+    grid-area: sidebar;
+    height: 100%;
+    background:white;
+    box-shadow: 6px 6px 7px -5px rgba(48, 62, 218, 0.35);
+    overflow-y: auto;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+}
+.sidebar-title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px 0px 30px;
+    margin-bottom: 30px;
+}
+.sidebar-title > span{
+    display: none;
+}
+.sidebar-brand{
+    margin-top: 15px;
+    font-size: 20px;
+    font-weight: 700;
+}
+.sidebar-list{
+    padding: 0;
+    list-style: none;
+}
+.sidebar-list-items{
+    padding: 20px 20px;
+    font-size: 18px;
+}
+.sidebar-list-items:hover{
+    background: #8ca8f7;
+    color: white;
+    cursor: pointer;
+}
+.sidebar-list-items > a {
+    text-decoration: none;
+    color: #141414;
+} 
+.sidebar-responsive{
+    display: inline !important;
+    position: absolute;
+    z-index: 12 !important;
+}
+
+.cloe-icon{
+    color: black;
+    margin-left: 20px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+@media screen and (max-width: 992px) {
+    #sidebar{
+        display: none;
+    }
+    .sidebar-title >span{
+      display: inline;
+    }
+  }

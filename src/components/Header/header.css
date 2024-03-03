@@ -1,0 +1,95 @@
+.header{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+.header-mid{
+    width: 100%;
+    height:70vh ;
+    position: relative;
+}
+.header-mid h1 {
+    padding-top: 4rem !important;
+  }
+  
+video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.header-text{
+   position: absolute;
+   color: #fff;
+   top: 55%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   width: 100%;
+}
+.header-text h1{
+    font-size: 3rem;
+    font-weight: 800;
+    background:white;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color:transparent ;
+    text-shadow: 5px 5px 8px rgba(0, 0, 0, 0.2); /* Add shadow effect */
+}
+.header-text p{
+    font-size:1.3rem;
+    padding: 0.5rem 0 2rem 0;
+    text-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    
+}
+.header-text .show{
+    text-decoration: none;
+    background: #fff;
+    padding: 1rem 2rem;
+    border-radius: 6px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: #18858d;
+}
+.header-text .hide{
+     display: none;
+
+}
+
+.header-text a {
+    display: inline-block;
+    background-color:#18858d; /* Button background color */
+    color: #fff; /* Button text color */
+    padding: 10px 20px; /* Button padding */
+    border-radius: 5px; /* Button border radius */
+    text-decoration: none;
+    transition: transform 0.3s; /* Transition effect for the slide */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow effect */
+  }
+  
+  .header-text a:hover {
+    transform: translateY(-5px); /* Slide up effect on hover */
+    background-color:#18858d; /* Change background color on hover */
+  color: #e6e6e6; /* Change text color on hover */
+  }
+  
+
+@media screen and (max-width:555px) {
+    .header-text h1{
+        padding: 10px 20px;
+    }
+    .header-text p{
+       font-size: 1.1rem;
+       padding: 0 0 2rem 0;
+    }
+    .header-text .show{
+        padding: .6rem 1.1rem;
+        border-radius: 6px;
+        font-size: 1rem;
+    }
+}
